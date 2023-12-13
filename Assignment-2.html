@@ -1,0 +1,72 @@
+Q1. What are the differences between var, let and const.
+
+Ans1. In JavaScript, var, let, and const are used to declare variables, but they have some
+ key differences in terms of scope, hoisting, and reassignment.
+
+ var: Variables declared with var are function-scoped. This means they are only visible
+within the function where they are declared. If declared outside any function, the 
+variable becomes a global variable.
+
+let and const: Variables declared with let and const are block-scoped. Block scope means
+the variable is only accessible within the block (enclosed by curly braces) where it is
+declared. This includes if statements, loops, and any other block structures.
+
+-------------------------------------------------------------------------------------------
+Q2. Difference between undefined vs not defined vs NAN.
+
+Ans2. Undefined: When a variable is declared but not assigned a value, it is automatically
+ assigned the value undefined.
+
+Not defined: If you try to access a variable that has not been declared, JavaScript will
+ throw a ReferenceError, indicating that the variable is not defined. 
+
+NAN: NaN is a special value in JavaScript representing "Not a Number." It is a result of
+invalid or undefined mathematical operations, such as dividing zero by zero or attempting
+to parse a non-numeric string as a number. 
+
+-------------------------------------------------------------------------------------------
+Q3. What is the difference between null and undefined and where to use what?
+
+Ans3. Undefined: A variable that has been declared but has not been assigned any value
+ automatically has the value undefined.
+
+Null: null is an assignment value that represents the intentional absence of any object
+ value. It is often used to explicitly indicate that a variable, object property, or 
+ function argument should have no value or no reference. 
+
+ We use undefined when a variable is naturally without a value, such as when declared but
+not assigned.
+And we use null to explicitly indicate the absence of a value, typically as a placeholder
+for an object that might be assigned later. 
+
+-------------------------------------------------------------------------------------------
+
+Q4. What is execution context?
+
+Ans4. In JavaScript, an execution context is an abstract concept that encompasses all the
+necessary information to manage the execution of code. It includes variables, functions,
+and the scope chain, which defines how variables and functions are accessed in the code.
+Every time code is executed, it is done within a specific execution context.
+
+There are three types of execution contexts in JavaScript:
+
+1. Global Execution Context
+2. Function Execution Context
+3. Eval Execution Context
+
+-------------------------------------------------------------------------------------------
+Q5. What is the use of prompt in JavaScript?
+
+Ans5. The prompt function in JavaScript is used to interact with the user by displaying a
+dialog box that prompts them to enter some information. prompt function can be intrusive,
+ and its use is often considered less user-friendly. The entered data is always returned as
+a string, so if numeric input is expected, it may need to be converted using functions 
+like parseInt or parseFloat.
+
+-------------------------------------------------------------------------------------------
+Q6. Why JavaScript is Dynamic language?
+
+Ans6. JavaScript is often referred to as a dynamic language due to its dynamic typing and
+dynamic behavior during runtime. The dynamic nature of JavaScript contributes to its
+versatility and makes it suitable for a wide range of applications, from web development
+to server-side programming and beyond.
